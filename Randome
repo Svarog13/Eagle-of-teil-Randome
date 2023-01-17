@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+void main()
+{
+	/*Для прийняття рішення студент Д.підкидав монету
+	9 разів.Якщо в результаті кількість монеток, що випали стороною «орел», була парним числом, приймав
+	рішення в позитивну сторону, інакше, у негативну.
+	Напишіть програму, яка 9 разів запитує число 1 або
+	0 (орел / решка) і видає відповідний результат розв, язання проблеми студента Д.*/
+	int toss, counter = 9;
+	float summ = 0;
+	for (int i = 1; i <= counter; i++)
+	{
+		int min = 0;
+		int max = 1;
+
+		int random = min + rand() % ((max + 1) - min);
+
+		cout << random<<" ";
+		random += summ;
+	}
+	
+	summ / 2;
+	if (summ >= 5)
+	{
+		cout << "You have positive answer!" << endl;
+	}
+	else
+	{
+		cout << "You have negative answer!" << endl;
+	}
+}
